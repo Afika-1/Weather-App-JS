@@ -6,7 +6,11 @@
 }
 
 body{
-    background-color: #222;
+
+    background: linear-gradient(135deg, #4d4b0a,#053f1d, #130668);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
  .card{
     width: 90%;
@@ -45,9 +49,12 @@ body{
     width: 60px;
     height: 60px;
     cursor: pointer;
+    
  }
  .search button img{
     width: 16px;
+    border-radius: 50%;
+   
  }
 
  .weather-icon{
