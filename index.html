@@ -16,13 +16,13 @@
         </div>
         <div class="weather">
             <img src="images/news-1471859267.jpg" class="weather-icon" />
-            <h1 class="temperature">232</h1>
-            <h2 class="city">City</h2>
+            <h1 class="temperature">... °C</h1>
+            <h2 class="city"> .... </h2>
             <div class="details">
                 <div class="col">
                     <img src="images/News.jpg" alt="">
                     <div>
-                        <p class="humidity">50%</p>
+                        <p class="humidity">....</p>
                         <p>Humidity</p>
                     </div>
                 </div>
@@ -40,8 +40,8 @@
 <script>
     const apiKey='5b5a19ec9258a466c3771664391b464c';
     const apiUrl='https://api.openweathermap.org/data/2.5/weather?units=metric&q=';
-    const searchInput=document.querySelector('search input');
-    const searchBtn=document.querySelector('search button');
+    const searchInput=document.querySelector('.search input');
+    const searchBtn=document.querySelector('.search button');
 
 
 async function weatherCheck(city){
@@ -53,7 +53,7 @@ async function weatherCheck(city){
     document.querySelector('.city').innerHTML=data.name;
     document.querySelector('.temperature').innerHTML= Math.round(data.main.temp) + "°C";
     document.querySelector('.humidity').innerHTML=data.main.humidity +'%';
-    document.querySelector('.wind').innerHTML=data.wind.speed +'km/h';
+    document.querySelector('.wind').innerHTML=Math.round(data.wind.speed) +'km/h';
 
 
 
@@ -61,7 +61,6 @@ async function weatherCheck(city){
 searchBtn.addEventListener('click', ()=>{
     weatherCheck(searchInput.value);
 })
-weatherCheck();
 
 </script>
 </body>
