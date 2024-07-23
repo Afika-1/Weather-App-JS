@@ -13,6 +13,12 @@ body{
     background-size: cover;
     height: 100vh;
 }
+.title{
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   margin-top: 15px;
+}
 
  .card{
     box-shadow: 5px 5px 14px 9px #000000;
@@ -20,6 +26,10 @@ body{
     max-width: 470px;
     background: linear-gradient(135deg, #fefa00,#00fe6a, #2d0ff0);
     color: #fff;
+
+    /* display: flex;
+    justify-content: center;
+     */
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
