@@ -27,10 +27,8 @@ body{
     background: linear-gradient(135deg, #fefa00,#00fe6a, #2d0ff0);
     color: #fff;
 
-    /* display: flex;
-    justify-content: center;
-     */
-    margin: 100px auto 0;
+ 
+    margin: 50px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
